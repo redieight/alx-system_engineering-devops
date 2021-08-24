@@ -1,0 +1,3 @@
+allias 
+path 
+global variables 
