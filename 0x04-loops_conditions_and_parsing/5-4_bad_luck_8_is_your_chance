@@ -1,21 +1,16 @@
 #!/usr/bin/env bash
-# Loops from 1 to 10 and displays:
-#   "bad luck" for the 4th iteration
-#   "good luck" for the 8th iteration
-#   "Holberton School" for all other iterations
-
-count=0
-
-while [ $count -lt 10 ]
+#prints a string 10 times
+x=0
+while [ $x != 10 ]
 do
-  if [ $count -eq 3 ]
+  if [ $x = 3 ]
   then
     echo "bad luck"
-  elif [ $count -eq 7 ]
+  elif [ $x = 7 ]
   then
     echo "good luck"
   else
-    echo "Holberton School"
+    echo "Best School"
   fi
-  (( count++ ))
+  x=$(( x + 1 ))
 done
